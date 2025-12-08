@@ -88,7 +88,60 @@
     <input type="number" id="statsAnswer">
     <button onclick="checkStatistics()">Kontrollo</button>
     <p id="statsResult"></p>
-`
+        <script>
+    // Marrim parametrin e leksionit nga URL
+    const params = new URLSearchParams(window.location.search);
+    const lesson = params.get('lesson');
+
+    const title = document.getElementById('lessonTitle');
+    const description = document.getElementById('lessonDescription');
+    const content = document.getElementById('lessonContent');
+
+    if(lesson === 'algebra') {
+        title.textContent = 'Algebra';
+        description.textContent = 'Shembuj vizual me ekuacione dhe tabela për variabla.';
+        content.innerHTML = `
+            <table>
+                <tr><th>Variabla</th><th>Ekuacioni</th><th>Zgjidhja</th></tr>
+                <tr><td>x</td><td>2x + 3 = 7</td><td>x = 2</td></tr>
+                <tr><td>y</td><td>3y - 5 = 1</td><td>y = 2</td></tr>
+            </table>
+            <div class="animation-box"><div class="moving-dot"></div></div>
+            <p>Animacion për funksion linear.</p>
+        `;
+    } else if(lesson === 'geometry') {
+        title.textContent = 'Gjeometri';
+        description.textContent = 'Figura dhe teorema vizuale me CSS shapes.';
+        content.innerHTML = `
+            <div class="geometry-shapes">
+                <div class="square"></div>
+                <div class="circle"></div>
+                <div class="triangle"></div>
+            </div>
+            <p>Këto figura shpjegojnë konceptet bazë të gjeometrisë.</p>
+        `;
+    } else if(lesson === 'statistics') {
+        title.textContent = 'Statistika';
+        description.textContent = 'Tabela dhe grafika për të kuptuar të dhënat.';
+        content.innerHTML = `
+            <table>
+                <tr><th>Kategoria</th><th>Vlerat</th></tr>
+                <tr><td>A</td><td>5</td></tr>
+                <tr><td>B</td><td>8</td></tr>
+                <tr><td>C</td><td>2</td></tr>
+            </table>
+            <div class="bar-chart">
+                <div class="bar" style="height:50px;">A</div>
+                <div class="bar" style="height:80px;">B</div>
+                <div class="bar" style="height:20px;">C</div>
+            </div>
+        `;
+    } else {
+        content.innerHTML = '<p>Leksioni nuk u gjet.</p>';
+    }
+</script>
+
 </body>
 
 <html>
+
