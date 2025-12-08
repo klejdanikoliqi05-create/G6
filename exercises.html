@@ -1,0 +1,129 @@
+Conversation opened. 1 unread message.
+
+Skip to content
+Using Gmail with screen readers
+Enable desktop notifications for Gmail.
+   OK  No thanks
+1 of 2,043
+(no subject)
+Inbox
+
+klejda nikoliqi
+Attachments
+12:38 PM (6 minutes ago)
+to me
+
+
+ 9 Attachments
+  •  Scanned by Gmail
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detyra të Zgjidhura – Mëso Matematikën Vizualisht</title>
+     <link rel="stylesheet" href="styles.css">
+<script defer src="scripts.js"></script>
+
+</head>
+<body>
+
+<header>
+    <h1>Detyra të Zgjidhura – Matematikë Vizuale</h1>
+</header>
+
+<main>
+    <!-- Detyra 1 – Algebra -->
+    <div class="exercise-card">
+        <h3>1) Algebra – Zgjidh ekuacionin:</h3>
+        <p>3x + 7 = 16</p>
+        <button class="show-solution" onclick="toggleSolution('sol1')">Shfaq Zgjidhjen</button>
+        <div id="sol1" class="solution">
+            <p>Hapat: 3x + 7 = 16 → 3x = 9 → x = 3</p>
+        </div>
+    </div>
+
+    <!-- Detyra 2 – Quadratic -->
+    <div class="exercise-card">
+        <h3>2) Quadratic – Zgjidh ekuacionin:</h3>
+        <p>x² - 5x + 6 = 0</p>
+        <button class="show-solution" onclick="toggleSolution('sol2')">Shfaq Zgjidhjen</button>
+        <div id="sol2" class="solution">
+            <p>Faktorizim: (x-2)(x-3) = 0 → x = 2 ose x = 3</p>
+        </div>
+    </div>
+
+    <!-- Detyra 3 – Tabela e Shumzimit -->
+    <div class="exercise-card">
+        <h3>3) Tabela e Shumzimit për 5</h3>
+        <table>
+            <tr><th>5 x 1</th><td>5</td></tr>
+            <tr><th>5 x 2</th><td>10</td></tr>
+            <tr><th>5 x 3</th><td>15</td></tr>
+            <tr><th>5 x 4</th><td>20</td></tr>
+            <tr><th>5 x 5</th><td>25</td></tr>
+        </table>
+    </div>
+
+    
+
+    <!-- Detyra 5 – Ushtrim interaktiv -->
+    <div class="exercise-card">
+        <h3>5) Ushtrim Interaktiv</h3>
+        <p>Zgjidh: 7 + 8 = ?</p>
+        <input type="number" id="interactive1" placeholder="Përgjigja">
+        <button onclick="checkInteractive('interactive1',15)">Kontrollo</button>
+        <span id="resInteractive1"></span>
+    </div>
+
+</main>
+
+<script>
+    function toggleSolution(id){
+        const sol = document.getElementById(id);
+        sol.style.display = sol.style.display === 'block' ? 'none' : 'block';
+    }
+
+    function checkInteractive(id, correct){
+        let val = document.getElementById(id).value;
+        let res = document.getElementById('res'+id);
+        if(val == correct){
+            res.textContent = "✅ Saktë!";
+            res.style.color = "green";
+        } else {
+            res.textContent = "❌ Provoni përsëri";
+            res.style.color = "red";
+        }
+    }
+</script>
+
+
+
+<section class="animated-graphs">
+    <h2> Rritja e Funksioneve</h2>
+    <p>Vëzhgo se si ndryshojnë vlerat e funksioneve ndërsa x rritet nga -10 në 10.</p>
+
+    <div class="graph-card">
+        <h3>1. Funksioni Linear: f(x) = 2x + 1</h3>
+        <canvas id="animLinear" width="600" height="300"></canvas>
+    </div>
+
+    <div class="graph-card">
+        <h3>2. Funksioni Kuadratik: f(x) = x² - 2x - 3</h3>
+        <canvas id="animQuadratic" width="600" height="300"></canvas>
+    </div>
+
+    <div class="graph-card">
+        <h3>3. Funksioni Kubik: f(x) = 0.1x³ - x</h3>
+        <canvas id="animCubic" width="600" height="300"></canvas>
+    </div>
+</section>
+
+
+<a href="index.html"><button class="nav-btn">🏠 Kthehu në Home</button></a>
+
+
+</body>
+</html>
+exercises.html
+Displaying exercises.html.
