@@ -1,23 +1,4 @@
-Conversation opened. 1 unread message.
-
-Skip to content
-Using Gmail with screen readers
-Enable desktop notifications for Gmail.
-   OK  No thanks
-1 of 2,043
-(no subject)
-Inbox
-
-klejda nikoliqi
-Attachments
-12:38 PM (10 minutes ago)
-to me
-
-
- 9 Attachments
-  •  Scanned by Gmail
-/* Reset bazik */
-* {
+ {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -29,7 +10,7 @@ body {
     color: #333;
 }
 
-/* Header */
+
 header {
     background: #4b6cb7;
     background: linear-gradient(135deg, #4b6cb7, #182848);
@@ -61,7 +42,7 @@ nav a.active {
     border-bottom: 2px solid #ffdd00;
 }
 
-/* Hero Section */
+
 .hero {
     text-align: center;
     padding: 60px 20px;
@@ -92,7 +73,7 @@ nav a.active {
     background: #182848;
 }
 
-/* Features */
+
 .features {
     display: flex;
     justify-content: space-around;
@@ -122,14 +103,14 @@ nav a.active {
 /* Butonat brenda kartave të leksioneve */
 .lesson-card .btn {
     display: inline-block;
-    margin-top: 15px; /* Distanca nga përshkrimi */
+    margin-top: 15px; 
     padding: 10px 20px;
 }
 
 /* Butoni kthehu tek leksionet në lesson-detail */
 .lesson-detail .btn {
     display: inline-block;
-    margin-top: 25px; /* Distanca nga përmbajtja */
+    margin-top: 25px;
     padding: 10px 25px;
     color:white;
 }
@@ -492,33 +473,33 @@ footer {
 }
 
 .card.algebra {
-    background-color: #fff9c4; /* light yellow */
+    background-color: #fff9c4; 
 }
 
 .card.geometry {
-    background-color: #bbdefb; /* light blue */
+    background-color: #bbdefb; 
 }
 
 .card.statistics {
-    background-color: #c8e6c9; /* light green */
+    background-color: #c8e6c9; 
 }
 
 .lesson-card.algebra {
-    background-color: #fff9c4; /* light yellow */
+    background-color: #fff9c4; 
 }
 .lesson-card.geometry {
-    background-color: #bbdefb; /* light blue */
+    background-color: #bbdefb; 
 }
 .lesson-card.statistics {
-    background-color: #c8e6c9; /* light green */
+    background-color: #c8e6c9; 
 }
 
-/* Opsionale: ndrysho ngjyrën e titujve */
+
 .lesson-card.algebra h3 { color: #fbc02d; }
 .lesson-card.geometry h3 { color: #1976d2; }
 .lesson-card.statistics h3 { color: #388e3c; }
 
-/* Opsionale: ndrysho butonat sipas leksionit */
+
 .lesson-card.algebra .btn { background-color: #fbc02d; }
 .lesson-card.geometry .btn { background-color: #1976d2; }
 .lesson-card.statistics .btn { background-color: #388e3c; }
@@ -622,7 +603,6 @@ main {
     color: #2a9d8f;
 }
 
-/* Butonët për shfaqjen e zgjidhjeve */
 button.show-solution {
     background: #0288d1;
     color: #fff;
@@ -743,26 +723,26 @@ canvas {
 }
 
 .nav-btn {
-    background: #2a9d8f;  /* e njëjta ngjyrë si Home/Leksione */
+    background: #2a9d8f;  
     color: white;
     border: none;
-    padding: 12px 25px;   /* i njëjti padding si Home/Leksione */
+    padding: 12px 25px;   
     border-radius: 8px;
-    font-size: 16px;      /* i njëjti font */
+    font-size: 16px;      
     cursor: pointer;
-    margin: 5px;          /* i njëjti margin */
+    margin: 5px;         
     transition: background 0.3s;
 }
 
 .nav-btn:hover {
-    background: #1f7d6f;  /* hover efekti i njëjtë */
+    background: #1f7d6f;  
 }
 
 .nav-menu {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15px;  /* hapësira midis butonave */
+    gap: 15px;  
     margin-top: 20px;
 }
 
@@ -812,5 +792,3 @@ canvas {
 
 
 
-styles.css
-Displaying exercises.html.
